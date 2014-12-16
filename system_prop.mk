@@ -37,3 +37,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
     wifi.supplicant_scan_interval=15
+
+# Deodexed build
+PRODUCT_PROPERTY_OVERRIDES += \
+    DISABLE_DEXPREOPT=true \
+    WITH_DEXPREOPT=false
